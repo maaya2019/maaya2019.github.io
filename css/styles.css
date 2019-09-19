@@ -134,7 +134,7 @@ nav a:hover {
   margin-top: -15rem;
 }
 .container.hero.shrunk h1 {
-  margin-top: -10rem;
+  margin-top: -4rem;
 }
 .container.hero img {
   width: 350px;
@@ -148,7 +148,7 @@ nav a:hover {
   font-size: 30px;
 }
 .container.hero + .container {
-  margin-top: -15rem;
+  margin-top: -9rem;
 }
 
 .bg-images {
