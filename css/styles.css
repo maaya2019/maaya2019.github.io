@@ -223,7 +223,7 @@ nav a:hover {
   color: #ffffff;
 }
 .event .card {
-  padding: 25px 30px;
+  padding: 40px 30px;
   
   background-size: cover;
   background-attachment: fixed;
@@ -284,6 +284,7 @@ nav a:hover {
 
 
 .contact {
+  text-shadow: 0 2px 15px #000000;
   padding: 5rem 0;
   color: #ffffff;
 }
@@ -318,7 +319,7 @@ nav a:hover {
 .evt-categories {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 .evt-categories .card {
@@ -400,6 +401,44 @@ footer a:hover i {
   top:250rem;
 }
 
+
+
+/** Background images corrections for different screen sizes **/
+
+@media screen and (min-width: 500px) {
+
+  .evt-categories {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .aurora:nth-child(1) {
+    display: none;
+  }
+  .aurora:nth-child(2) {
+    right:-115%;
+    top:20rem;
+  }
+  .aurora:nth-child(3) {
+    left:-105%;
+    top:45rem;
+  }
+  .aurora:nth-child(4) {
+    left:-195%;
+    top:70rem;
+    width:2400px;
+    max-width:none;
+  }
+  .aurora:nth-child(5) {
+    left:-100%;
+    top:200rem;
+  }
+  .aurora:nth-child(6) {
+    right:-100%;
+    top:250rem;
+  }
+}
+
+
 @media screen and (min-width: 700px) {
   .container {
     padding: 0 60px;
@@ -466,37 +505,6 @@ footer a:hover i {
   .aurora:nth-child(6) {
     right:-72%;
     top:220rem;
-  }
-}
-
-
-/** Background images corrections for different screen sizes **/
-
-@media screen and (min-width: 500px) {
-  .aurora:nth-child(1) {
-    display: none;
-  }
-  .aurora:nth-child(2) {
-    right:-115%;
-    top:20rem;
-  }
-  .aurora:nth-child(3) {
-    left:-105%;
-    top:45rem;
-  }
-  .aurora:nth-child(4) {
-    left:-195%;
-    top:70rem;
-    width:2400px;
-    max-width:none;
-  }
-  .aurora:nth-child(5) {
-    left:-100%;
-    top:200rem;
-  }
-  .aurora:nth-child(6) {
-    right:-100%;
-    top:250rem;
   }
 }
 
