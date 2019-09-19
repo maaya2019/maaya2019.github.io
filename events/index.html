@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events List - Maaya 2019</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .container.hero {
+      height: auto !important;
+      min-height: 95vh;
+      padding: 20vh 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      .bg-images {
+        display: none;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  
+  <header>
+    <a href="/" class="brand">
+      <img src="/images/Maaya.png" alt="">
+    </a>
+    <button class="menu icon ion-ios-menu" id="mobileMenu" onclick="toggleMenu()">
+    </button>
+    <nav>
+      <a href="/#events">Major Events</a>
+      <a href="/sponsors">Past Sponsors</a>
+      <a href="/events/" class="active">Events List</a>
+      <a href="#">Gallery</a>
+      <a href="/#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="container hero">
+    <h1 style="margin-top: 0">Events List</h1>
+
+
+    <div class="container evt-categories">
+      <a href="#" class="card">
+        <h2>Cultural</h2>
+      </a>
+      <a href="#" class="card">
+        <h2>Theatre</h2>
+      </a>
+      <a href="#" class="card">
+        <h2>Fine Arts</h2>
+      </a>
+      <a href="#" class="card">
+        <h2>Sports</h2>
+      </a>
+      <a href="./technical.html" class="card">
+        <h2>Technical</h2>
+      </a>
+      <a href="#" class="card">
+        <h2>Fun-Based</h2>
+      </a>
+      <a href="./literary.html" class="card">
+        <h2>Literary</h2>
+      </a>
+      <a href="#" class="card">
+        <h2>Gaming</h2>
+      </a>
+    </div>
+
+  </section>
+
+  <div class="bg-images" id="bgImg">
+    <img src="/images/aurora_eye.png" class="aurora">
+    <img src="/images/aurora_eye.png" class="aurora">
+  </div>
+
+  <footer>
+    <a href="https://www.instagram.com/maayapesu/">
+      <i class="icon ion-logo-instagram" style="color:#E1306C"></i>
+    </a>
+    <a href="https://www.facebook.com/maayapesu/">
+      <i class="icon ion-logo-facebook" style="color:#3B5998"></i>
+    </a>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
