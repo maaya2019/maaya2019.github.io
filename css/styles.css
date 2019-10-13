@@ -103,17 +103,26 @@ nav a:hover {
 }
 
 .container.hero {
+  padding: 3rem 0;
   color: #ffffff;
-  height: 120vh;
+  min-height: 125vh;
   background: linear-gradient(0deg, #0F1623 -3.36%, #1E3342 66.71%), url(../images/background.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply, normal;
+  z-index: initial;
+  text-shadow: 0 2px 15px #000000;
+}
+.container.hero,
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  z-index: 0;
+  justify-content: center;  
+}
+.container.hero .content {
+  position: relative;
+  z-index: 1;
 }
 .container.hero::before {
   content: '';
@@ -125,18 +134,13 @@ nav a:hover {
   background: linear-gradient(180deg, rgba(16, 23, 37, 0) 50%, #0F1623 100%);
 }
 .container.hero.shrunk {
-  height: 80vh;
+  min-height: 60vh;
 }
 .container.hero h1 {
   font-size: 3rem;
 }
-.container.hero h1, .container.hero img {
-  margin-top: -15rem;
-}
-.container.hero.shrunk h1 {
-  margin-top: -4rem;
-}
 .container.hero img {
+  max-width: 100%;
   width: 350px;
   display: block;
 }
@@ -147,8 +151,37 @@ nav a:hover {
   font-weight: 600;
   font-size: 30px;
 }
-.container.hero + .container {
-  margin-top: -9rem;
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.countdown div {
+  margin: 0 50px;
+}
+.countdown div::after {
+  display: block;
+  opacity: 0.5;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -5px;
+}
+.countdown #days::after {
+  content: 'Days';
+}
+.countdown #hours::after {
+  content: 'Hours';
+}
+.countdown #minutes::after {
+  content: 'Minutes';
+}
+.countdown #seconds::after {
+  content: 'Seconds';
 }
 
 .bg-images {
@@ -445,6 +478,10 @@ footer a:hover i {
     text-align: center;
     position: relative;
     z-index: 1;
+  }
+  
+  .container.hero {
+    min-height: 100vh;
   }
 
   .event .card {

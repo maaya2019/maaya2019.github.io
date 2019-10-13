@@ -40,10 +40,19 @@
 
   <section class="container hero">
 
-    <img src="images/Maaya.png" alt="Maaya">
-    <div class="date">
-      <span>15 </span>&<span> 16 </span> Nov<br/>
-      <span>Registrations will open soon!</span> 
+    <div class="content">
+      <img src="images/Maaya.png" alt="Maaya">
+      <div class="date">
+        <span>15 </span>&<span> 16 </span> Nov<br/>
+        <span>Registrations will open soon!</span> 
+  
+        <div class="countdown">
+          <div id="days"></div>
+          <div id="hours"></div>
+          <div id="minutes"></div>
+          <div id="seconds"></div>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -313,5 +322,8 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script>
+    setInterval(numDays, 1000);
+  </script>
 </body>
 </html>

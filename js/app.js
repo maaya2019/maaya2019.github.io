@@ -17,3 +17,21 @@ function toggleMenu() {
   btn.classList.toggle('ion-md-close');
   nav.classList.toggle('visible');
 }
+
+function frmtSingleNum(num) {
+  return ('0' + num).slice(-2);
+}
+
+function numDays() {
+  var diffTime = new Date(1573790400000) - (new Date());
+
+  var days = diffTime / (1000 * 60 * 60 * 24);
+  var hours = (days % 1) * 24;
+  var mins = (hours % 1) * 60;
+  var secs = (mins % 1) * 60;
+
+  document.querySelector('.countdown #days').innerText = frmtSingleNum(Math.floor(days));
+  document.querySelector('.countdown #hours').innerText = frmtSingleNum(Math.floor(hours));
+  document.querySelector('.countdown #minutes').innerText = frmtSingleNum(Math.floor(mins));
+  document.querySelector('.countdown #seconds').innerText = frmtSingleNum(Math.floor(secs));
+}
