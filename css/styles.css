@@ -388,6 +388,33 @@ nav a:hover {
   margin-left: 0.3rem;
 }
 
+.team .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.member .pic {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.2s ease;
+}
+.member .pic:hover {
+  transform: scale(1.08);
+}
+.member h2 {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+.member p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
 
 footer {
   text-align: center;
@@ -526,6 +553,10 @@ footer a:hover i {
     padding: 45px 65px;
   }
 
+  .team .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 
   .aurora:nth-child(1) {
     display: initial;
@@ -613,6 +644,10 @@ footer a:hover i {
   }
   nav a:last-child {
     padding-right: 0;
+  }
+
+  .team .card {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .aurora:nth-child(1) {
