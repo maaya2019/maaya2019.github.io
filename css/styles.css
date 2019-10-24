@@ -223,7 +223,8 @@ nav a:hover {
   outline: none;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  width: 170px;
+  min-width: 140px;
+  padding: 0 20px;
   height: 50px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -235,6 +236,12 @@ nav a:hover {
 }
 .btn:hover {
   transform: scale(1.05);
+}
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  background: linear-gradient(106.65deg, #5399b8 13%, rgba(51, 24, 83, 0.774) 85%);
 }
 
 .btn.secondary {
@@ -531,7 +538,7 @@ footer a:hover i {
     max-width: 75%;
   }
   .event .btn {
-    width: 170px;
+    width: auto;
     margin: 0 0.6rem;
   }
 
