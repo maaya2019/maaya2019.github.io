@@ -25,6 +25,11 @@ function frmtSingleNum(num) {
 function numDays() {
   var diffTime = new Date(1573790400000) - (new Date());
 
+  if (diffTime <= 0) {
+    document.getElementById('progress').innerHTML = '<span>#MaayaIsHere 🎉</span>';
+    return;
+  }
+
   var days = diffTime / (1000 * 60 * 60 * 24);
   var hours = (days % 1) * 24;
   var mins = (hours % 1) * 60;
